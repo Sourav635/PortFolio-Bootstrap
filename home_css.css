@@ -1,0 +1,360 @@
+*{
+  font-size: 18px;
+  scroll-behavior: smooth;
+  font-family: 'Roboto Slab', serif;
+  color: black;
+}
+.home{
+  background-image: url("9.jpg");
+  background-size: cover;
+  height: 100vh;
+  margin: 0px -16px;
+}
+#wrapper{
+  background-color: #040b14;
+  transition: 0.3s ease;
+}
+.sidebar-menu li{
+  margin-bottom: 10%;
+}
+.fa{
+  margin-right: 10px;
+  -webkit-text-stroke: .8px #a8a9b4;
+  -webkit-text-fill-color: #040b14;
+  -webkit-font-smoothing: antialiased;
+}
+
+#wrapper li a:hover .fa {
+  -webkit-text-stroke: 1px #149ddd;;
+}
+
+@media only screen and (max-width:1070px) {
+  .home{
+    width:100vw;
+    height: 100vh;
+  }
+  .main{
+    max-width: 100vw;
+  }
+  .about{
+    width: 100vw;
+    max-width: 100vw;
+  }
+  .skills{
+    width: 100vw;
+    max-width: 100vw;
+  }
+  #wrapper{
+    display:none;
+  }
+}
+.top-nav{
+  display: none;
+}
+@media only screen and (min-width: 700px) and (max-width: 1070px){
+  .top-nav{
+    display: block;
+  }
+}
+
+.card-title{
+  font-weight: bold;
+  font-size: 20px;
+}
+.card-img-top{
+  height: 100%;
+  width:100%;
+}
+.card{
+  width: 100%;
+  margin-right: 10%;
+}
+
+.progress{
+  height:14px;
+  background-color: white;
+}
+
+.progress-bar{
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #a5eafa;
+}
+
+span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#wrapper a {
+  display: block;
+  color: #a8a9b4;
+  font-size: 20px;
+}
+
+#wrapper li:hover{
+  color: #fff;
+  transform: translateX(15%);
+}
+
+#wrapper a:hover{
+  color: white;
+}
+
+.border-3{
+  border-width:120px;
+}
+
+.dp {
+  margin: 25%;
+  border: 3px solid white;
+}
+
+.skills{
+  background-color: #f0f0f0;
+}
+
+.sub-heading{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+
+.sub-heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: pink;
+  width: 50px;
+  height: 4px;
+  background: #149ddd;
+  margin-top: 10px;
+}
+
+
+.card-box {
+  background-color: #f0f0f0;
+  position: relative;
+  max-width: 300px;
+  height: 150px;
+  margin : 30px 10px;
+  padding : 20px 15px;
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  transform: scale(100%);
+  border-radius : 15px;
+}
+
+.image {
+  position : relative;
+  width : 100%;
+  height : 120%;
+  text-align: center;
+  transform: translateY(-50px);
+  /* box-shadow : 0 5px 20px rgba(0,0,0,0.1); */
+  z-index: 100;
+  border-radius: 15px;
+}
+
+.image img {
+  position: relative;
+  /* width : 100%; */
+  max-width: 100%;
+  /* height: 100%; */
+  max-height: 120%;
+  border-radius : 10px;
+ }
+
+ .description {
+  font-size: 15px;
+  padding: 10px 20px;
+  text-align: center;
+  transform: translateY(-250px);
+  opacity: 0;
+  transition: 0.3s;
+ }
+
+ .description p{
+   font-size: 14px;
+ }
+
+.card-box:hover{
+  height: 220px;
+  cursor: pointer;
+}
+
+.card-box:hover .description{
+  opacity: 1;
+  transform: translateY(-50px);
+}
+
+.navbar {
+  margin: 0;
+  background-color: #040b14;
+}
+
+.list {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.list * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.list li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  overflow: hidden;
+}
+.list a {
+  padding: 0.3em 0;
+  color: #212121;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+}
+.list a:before,
+.list a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.list a:before {
+  bottom: 100%;
+  display: block;
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: #e67e22;
+}
+.list a:after {
+  padding: 0.3em 0;
+  position: absolute;
+  bottom: 100%;
+  left: .5em;
+  content: attr(data-hover);
+  color: white;
+  white-space: nowrap;
+}
+.list li:hover a{
+  transform: translateY(100%);
+}
+
+.main-box{
+  box-sizing: border-box;
+  border-left: 20px solid transparent;
+  background-clip:padding-box;
+}
+
+
+
+
+
+.btn-container{
+  width: 100%;
+}
+
+.d-btn{
+  color: white;
+  margin-left: 30%;
+  padding: 10px 100px;
+  z-index: 2;
+  overflow: hidden;
+  background: #040b14;
+  position: relative;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+.d-btn::before{
+	content: "";
+	width: 100%;
+	height: 50%;
+	background: rgb(158 158 158 /10%);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+}
+
+.d-btn span:nth-child(1){
+	width: 100%;
+	height: 4px;
+	position: absolute;
+	background: linear-gradient(to right, transparent, #1779ff);
+	animation: ant1 1s linear infinite;
+	top: 0;
+	left: 0;
+}
+
+@keyframes ant1{
+	0%{transform: translateX(-230px);}
+	100%{transform: translateX( 100px);}
+}
+
+.btn span:nth-child(2){
+	width: 4px;
+	height: 100%;
+	position: absolute;
+	background: linear-gradient(to bottom, transparent, #1779ff);
+	animation: ant2 1s linear infinite;
+	animation-delay: 0.5s;
+	top: 0;
+	right: 0;
+}
+
+@keyframes ant2{
+	0%{transform: translateY(-100px);}
+	100%{transform: translateY( 100px);}
+}
+
+.btn span:nth-child(3){
+	width: 100%;
+	height: 4px;
+	position: absolute;
+	background: linear-gradient(to left, transparent, #1779ff);
+	animation: ant3 1s linear infinite;
+	bottom: 0;
+	left: 0;
+}
+
+@keyframes ant3{
+	0%{transform: translateX( 230px);}
+	100%{transform: translateX( -100px);}
+}
+
+.btn span:nth-child(4){
+	width: 4px;
+	height: 100%;
+	position: absolute;
+	background: linear-gradient(to top, transparent, #1779ff);
+	animation: ant4 1s linear infinite;
+	animation-delay: 0.5s;
+	top: 0;
+	left: 0;
+}
+
+@keyframes ant4{
+	0%{transform: translateY( 100px);}
+	100%{transform: translateY( -100px);}
+}
+
+.d-btn:hover{
+	color: #1779ff;
+}
+
+.hero{
+  width:100%;
+  height:100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7)) url("contact.jpg");
+  background-position: center;
+  background-size: cover;
+}
